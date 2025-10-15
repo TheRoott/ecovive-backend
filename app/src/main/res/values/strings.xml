@@ -1,0 +1,98 @@
+<resources>
+    <string name="app_name">EcoVive Perú</string>
+    
+    <!-- Navegación -->
+    <string name="nav_home">Inicio</string>
+    <string name="nav_report">Reportar</string>
+    <string name="nav_map">Mapa</string>
+    <string name="nav_rewards">Recompensas</string>
+    <string name="nav_profile">Perfil</string>
+    
+    <!-- Autenticación -->
+    <string name="login_title">Iniciar Sesión</string>
+    <string name="register_title">Crear Cuenta</string>
+    <string name="email_hint">Correo electrónico</string>
+    <string name="password_hint">Contraseña</string>
+    <string name="name_hint">Nombre completo</string>
+    <string name="confirm_password_hint">Confirmar contraseña</string>
+    <string name="login_button">Iniciar Sesión</string>
+    <string name="register_button">Crear Cuenta</string>
+    <string name="no_account">¿No tienes cuenta?</string>
+    <string name="has_account">¿Ya tienes cuenta?</string>
+    <string name="register_link">Regístrate</string>
+    <string name="login_link">Inicia sesión</string>
+    
+    <!-- Pantalla de inicio -->
+    <string name="welcome_message">¡Hola, EcoGuardián!</string>
+    <string name="eco_points">EcoPuntos</string>
+    <string name="reports_count">Reportes</string>
+    <string name="quick_actions">Acciones Rápidas</string>
+    <string name="environmental_news">Noticias Ambientales</string>
+    <string name="tip_of_day">Consejo del Día</string>
+    
+    <!-- Reportes -->
+    <string name="report_title">Reportar Problema Ambiental</string>
+    <string name="report_subtitle">Ayuda a mantener limpio tu entorno</string>
+    <string name="select_category">Selecciona el tipo de problema</string>
+    <string name="description_hint">Describe el problema que observas...</string>
+    <string name="take_photo">Tomar Foto</string>
+    <string name="current_location">Ubicación actual</string>
+    <string name="send_report">Enviar Reporte</string>
+    <string name="sending_report">Enviando reporte...</string>
+    <string name="earn_ecopoints">¡Gana EcoPuntos!</string>
+    <string name="report_reward_message">Por cada reporte válido obtienes 50 EcoPuntos. ¡Ayuda a mantener limpio tu entorno y gana recompensas!</string>
+    
+    <!-- Mapa -->
+    <string name="map_title">Mapa de Reportes</string>
+    <string name="recent_reports">Reportes Recientes</string>
+    <string name="view_report">Ver</string>
+    <string name="filters">Filtros</string>
+    
+    <!-- Recompensas -->
+    <string name="rewards_title">Recompensas y Logros</string>
+    <string name="current_level">Nivel Actual</string>
+    <string name="unlocked_achievements">Logros Desbloqueados</string>
+    <string name="pending_achievements">Logros Pendientes</string>
+    <string name="monthly_ranking">Ranking Mensual</string>
+    <string name="available_rewards">Recompensas Disponibles</string>
+    <string name="progress_next_level">Progreso al siguiente nivel</string>
+    <string name="redeem_reward">Canjear</string>
+    <string name="not_available">No disponible</string>
+    
+    <!-- Perfil -->
+    <string name="profile_title">Perfil</string>
+    <string name="statistics">Estadísticas</string>
+    <string name="member_since">Miembro desde</string>
+    <string name="highlighted_achievements">Logros Destacados</string>
+    <string name="settings">Configuración</string>
+    <string name="edit_profile">Editar Perfil</string>
+    <string name="notifications">Notificaciones</string>
+    <string name="privacy">Privacidad</string>
+    <string name="help_support">Ayuda y Soporte</string>
+    <string name="about">Acerca de</string>
+    <string name="logout">Cerrar Sesión</string>
+    <string name="app_version">Versión 1.0.0</string>
+    <string name="app_tagline">Conectando personas con el planeta</string>
+    
+    <!-- Categorías de reporte -->
+    <string name="category_trash">Basura</string>
+    <string name="category_pollution">Contaminación</string>
+    <string name="category_logging">Tala Ilegal</string>
+    <string name="category_water">Contaminación del Agua</string>
+    <string name="category_animals">Maltrato Animal</string>
+    <string name="category_chemicals">Sustancias Químicas</string>
+    
+    <!-- Mensajes motivacionales -->
+    <string name="motivational_1">Cada acción cuenta para nuestro planeta</string>
+    <string name="motivational_2">Juntos podemos hacer la diferencia</string>
+    <string name="motivational_3">Conectando personas con el planeta</string>
+    
+    <!-- Ubicaciones -->
+    <string name="location_ventanilla">Ventanilla, Callao, Perú</string>
+    <string name="location_lima">Lima, Perú</string>
+    
+    <!-- Niveles de usuario -->
+    <string name="level_explorer">Explorador</string>
+    <string name="level_protector">Protector</string>
+    <string name="level_guardian">Guardián</string>
+</resources>

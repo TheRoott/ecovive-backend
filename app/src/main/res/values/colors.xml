@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Colores principales de EcoVive Perú -->
+    
+    <!-- Verde Ecológico -->
+    <color name="eco_green_primary">#2E7D32</color>
+    <color name="eco_green_light">#4CAF50</color>
+    <color name="eco_green_dark">#1B5E20</color>
+    <color name="eco_green_accent">#66BB6A</color>
+    
+    <!-- Azul Océano -->
+    <color name="ocean_blue_primary">#1976D2</color>
+    <color name="ocean_blue_light">#42A5F5</color>
+    <color name="ocean_blue_dark">#0D47A1</color>
+    <color name="ocean_blue_accent">#64B5F6</color>
+    
+    <!-- Colores de soporte -->
+    <color name="nature_white">#FAFAFA</color>
+    <color name="earth_brown">#8D6E63</color>
+    <color name="sky_blue">#E3F2FD</color>
+    <color name="leaf_green">#E8F5E8</color>
+    
+    <!-- Colores para modo oscuro -->
+    <color name="eco_green_dark_80">#81C784</color>
+    <color name="ocean_blue_dark_80">#90CAF9</color>
+    <color name="nature_white_dark">#121212</color>
+    <color name="earth_brown_dark">#5D4037</color>
+    
+    <!-- Colores de estado -->
+    <color name="success_green">#4CAF50</color>
+    <color name="warning_orange">#FF9800</color>
+    <color name="error_red">#F44336</color>
+    <color name="info_blue">#2196F3</color>
+    
+    <!-- Colores de gamificación -->
+    <color name="gold_badge">#FFD700</color>
+    <color name="silver_badge">#C0C0C0</color>
+    <color name="bronze_badge">#CD7F32</color>
+    
+    <!-- Colores básicos -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    
+    <!-- Colores legacy para compatibilidad -->
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+</resources>
