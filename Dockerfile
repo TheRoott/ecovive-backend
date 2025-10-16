@@ -10,7 +10,7 @@ RUN apt-get update && apt-get install -y maven
 
 # Compilar el proyecto
 WORKDIR /app/backend
-RUN mvn clean package -DskipTests
+RUN mvn clean package -DskipTests -X
 
 # Exponer puerto
 EXPOSE 8080
