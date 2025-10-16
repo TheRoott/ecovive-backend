@@ -1,5 +1,8 @@
 {
   "build": {
-    "builder": "DOCKERFILE"
+    "builder": "NIXPACKS"
+  },
+  "deploy": {
+    "startCommand": "cd backend && mvn spring-boot:run"
   }
 }
