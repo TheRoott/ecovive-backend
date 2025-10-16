@@ -1,11 +1,8 @@
 {
   "version": 2,
-  "builds": [
-    {
-      "src": "pom.xml",
-      "use": "@vercel/java"
-    }
-  ],
+  "buildCommand": "cd backend && mvn clean package -DskipTests",
+  "outputDirectory": "backend/target",
+  "installCommand": "cd backend && mvn clean package -DskipTests",
   "routes": [
     {
       "src": "/(.*)",
@@ -14,10 +11,5 @@
   ],
   "env": {
     "SPRING_PROFILES_ACTIVE": "vercel"
-  },
-  "functions": {
-    "pom.xml": {
-      "runtime": "java17"
-    }
   }
 }

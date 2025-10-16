@@ -1,0 +1,13 @@
+{
+  "name": "ecovive-backend",
+  "version": "1.0.0",
+  "description": "EcoVive Perú Backend",
+  "main": "backend/target/ecovive-backend-1.0.0.jar",
+  "scripts": {
+    "build": "cd backend && mvn clean package -DskipTests",
+    "start": "cd backend && java -jar target/ecovive-backend-1.0.0.jar"
+  },
+  "engines": {
+    "node": "18.x"
+  }
+}
