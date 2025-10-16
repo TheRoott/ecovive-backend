@@ -14,5 +14,10 @@
   ],
   "env": {
     "SPRING_PROFILES_ACTIVE": "vercel"
+  },
+  "functions": {
+    "pom.xml": {
+      "runtime": "java17"
+    }
   }
 }
