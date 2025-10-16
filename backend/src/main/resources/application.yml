@@ -11,7 +11,7 @@ spring:
     name: ecovive-backend
   
   profiles:
-    active: dev
+    active: railway
   
   datasource:
     url: jdbc:postgresql://localhost:5432/ecovive_db
