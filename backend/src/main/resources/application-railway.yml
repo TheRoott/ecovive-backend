@@ -1,156 +1,27 @@
 server:
   port: ${PORT:8080}
-<<<<<<< HEAD
-  servlet:
-    context-path: /api
 
 spring:
   application:
     name: ecovive-backend
   
-=======
-
-spring:
->>>>>>> c09e6e4f01d26eaabb7d2774350913801fad0fe6
   datasource:
     url: ${DATABASE_URL}
     username: ${DATABASE_USERNAME}
     password: ${DATABASE_PASSWORD}
-<<<<<<< HEAD
     driver-class-name: org.postgresql.Driver
-    hikari:
-      maximum-pool-size: 10
-      minimum-idle: 2
-      connection-timeout: 20000
-      idle-timeout: 300000
-      max-lifetime: 1200000
   
   jpa:
     hibernate:
       ddl-auto: update
     show-sql: false
-    properties:
-      hibernate:
-        dialect: org.hibernate.dialect.PostgreSQLDialect
-        format_sql: false
-        jdbc:
-          batch_size: 25
-        order_inserts: true
-        order_updates: true
   
   security:
     jwt:
       secret: ${JWT_SECRET:ecovive_jwt_secret_key_2024_very_secure_256_bits}
-      expiration: 86400000 # 24 horas
-  
-  servlet:
-    multipart:
-      max-file-size: 10MB
-      max-request-size: 10MB
-  
-  cache:
-    type: caffeine
-    caffeine:
-      spec: maximumSize=500,expireAfterWrite=300s
+      expiration: 86400000
 
-# File Storage Configuration (Local para Railway)
-file:
-  storage:
-    type: local
-    local:
-      upload-dir: ./uploads
-      base-url: ${RAILWAY_PUBLIC_DOMAIN:https://your-app.railway.app}/api/files
-
-# Email Configuration
-mail:
-  host: smtp.gmail.com
-  port: 587
-  username: ${MAIL_USERNAME:ecovive.peru@gmail.com}
-  password: ${MAIL_PASSWORD:your-app-password}
-  properties:
-    mail:
-      smtp:
-        auth: true
-        starttls:
-          enable: true
-
-# Logging Configuration
 logging:
   level:
     com.ecovive: INFO
-    org.springframework.security: WARN
-    org.hibernate.SQL: WARN
-    org.hibernate.type.descriptor.sql.BasicBinder: WARN
-    org.springframework.web: INFO
-    org.springframework: INFO
-  pattern:
-    console: "%d{yyyy-MM-dd HH:mm:ss} - %msg%n"
-
-# Management Endpoints
-management:
-  endpoints:
-    web:
-      exposure:
-        include: health,info,metrics
-  endpoint:
-    health:
-      show-details: always
-
-# Swagger/OpenAPI Configuration
-springdoc:
-  api-docs:
-    path: /api-docs
-  swagger-ui:
-    path: /swagger-ui.html
-    operationsSorter: method
-  show-actuator: true
-
-# Application Custom Properties
-app:
-  name: EcoVive Perú Backend
-  version: 1.0.0
-  description: Backend para aplicación de reportes ambientales
-  
-  # Rate Limiting (más conservador para Railway)
-  rate-limit:
-    requests-per-minute: 30
-    burst-capacity: 50
-  
-  # File Upload Limits
-  upload:
-    max-file-size: 5242880 # 5MB (más pequeño para Railway)
-    allowed-extensions: jpg,jpeg,png,gif,webp
-    max-files-per-request: 3
-  
-  # User Limits
-  user:
-    max-reports-per-day: 20
-    max-photos-per-report: 5
-  
-  # Cache Configuration
-  cache:
-    user-profile-ttl: 1800 # 30 minutos
-    reports-list-ttl: 300 # 5 minutos
-    stats-ttl: 900 # 15 minutos
-=======
-  jpa:
-    hibernate:
-      ddl-auto: update
-  security:
-    jwt:
-      secret: ${JWT_SECRET}
-      expiration: 86400000
-
-aws:
-  s3:
-    bucket-name: ecovive-peru-files
-    region: us-east-1
-    access-key: ${AWS_ACCESS_KEY_ID}
-    secret-key: ${AWS_SECRET_ACCESS_KEY}
-
-mail:
-  host: smtp.gmail.com
-  port: 587
-  username: ${MAIL_USERNAME}
-  password: ${MAIL_PASSWORD}
->>>>>>> c09e6e4f01d26eaabb7d2774350913801fad0fe6
+    org.springframework: WARN
