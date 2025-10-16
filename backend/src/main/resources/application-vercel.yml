@@ -1,0 +1,27 @@
+server:
+  port: ${PORT:8080}
+
+spring:
+  application:
+    name: ecovive-backend
+  
+  datasource:
+    url: ${DATABASE_URL:jdbc:postgresql://localhost:5432/ecovive_db}
+    username: ${DATABASE_USERNAME:ecovive_user}
+    password: ${DATABASE_PASSWORD:ecovive_pass123}
+    driver-class-name: org.postgresql.Driver
+  
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+  
+  security:
+    jwt:
+      secret: ${JWT_SECRET:ecovive_jwt_secret_key_2024_very_secure_256_bits}
+      expiration: 86400000
+
+logging:
+  level:
+    com.ecovive: INFO
+    org.springframework: WARN
