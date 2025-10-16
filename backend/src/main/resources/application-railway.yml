@@ -1,5 +1,6 @@
 server:
   port: ${PORT:8080}
+<<<<<<< HEAD
   servlet:
     context-path: /api
 
@@ -7,10 +8,15 @@ spring:
   application:
     name: ecovive-backend
   
+=======
+
+spring:
+>>>>>>> c09e6e4f01d26eaabb7d2774350913801fad0fe6
   datasource:
     url: ${DATABASE_URL}
     username: ${DATABASE_USERNAME}
     password: ${DATABASE_PASSWORD}
+<<<<<<< HEAD
     driver-class-name: org.postgresql.Driver
     hikari:
       maximum-pool-size: 10
@@ -126,3 +132,25 @@ app:
     user-profile-ttl: 1800 # 30 minutos
     reports-list-ttl: 300 # 5 minutos
     stats-ttl: 900 # 15 minutos
+=======
+  jpa:
+    hibernate:
+      ddl-auto: update
+  security:
+    jwt:
+      secret: ${JWT_SECRET}
+      expiration: 86400000
+
+aws:
+  s3:
+    bucket-name: ecovive-peru-files
+    region: us-east-1
+    access-key: ${AWS_ACCESS_KEY_ID}
+    secret-key: ${AWS_SECRET_ACCESS_KEY}
+
+mail:
+  host: smtp.gmail.com
+  port: 587
+  username: ${MAIL_USERNAME}
+  password: ${MAIL_PASSWORD}
+>>>>>>> c09e6e4f01d26eaabb7d2774350913801fad0fe6
