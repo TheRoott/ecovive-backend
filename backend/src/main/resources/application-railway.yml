@@ -13,12 +13,11 @@ spring:
   
   jpa:
     hibernate:
-      ddl-auto: create
+      ddl-auto: none
     show-sql: false
     properties:
       hibernate:
         dialect: org.hibernate.dialect.H2Dialect
-        format_sql: false
   
   h2:
     console:
@@ -26,10 +25,11 @@ spring:
   
   security:
     jwt:
-      secret: ${JWT_SECRET:ecovive_jwt_secret_key_2024_very_secure_256_bits}
+      secret: ecovive_jwt_secret_key_2024_very_secure_256_bits
       expiration: 86400000
 
 logging:
   level:
     com.ecovive: INFO
     org.springframework: WARN
+    org.hibernate: WARN
