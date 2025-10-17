@@ -5,7 +5,7 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import com.example.myapplication.presentation.screens.auth.SimpleLoginScreen
-import com.example.myapplication.presentation.screens.auth.RegisterScreen
+import com.example.myapplication.presentation.screens.auth.SimpleRegisterScreen
 import com.example.myapplication.presentation.screens.main.MainScreen
 import com.example.myapplication.presentation.screens.splash.SplashScreen
 import com.example.myapplication.presentation.screens.test.TestConnectionScreen
@@ -47,7 +47,7 @@ fun EcoViveNavigation(navController: NavHostController) {
         }
         
         composable(Screen.Register.route) {
-            RegisterScreen(
+            SimpleRegisterScreen(
                 onNavigateToLogin = {
                     navController.popBackStack()
                 },
