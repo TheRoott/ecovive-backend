@@ -28,11 +28,6 @@ fun EcoViveNavigation(navController: NavHostController) {
                         popUpTo(Screen.Splash.route) { inclusive = true }
                     }
                 },
-                onNavigateToTest = {
-                    navController.navigate(Screen.TestConnection.route) {
-                        popUpTo(Screen.Splash.route) { inclusive = true }
-                    }
-                }
             )
         }
         
