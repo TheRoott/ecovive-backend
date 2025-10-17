@@ -6,7 +6,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import com.example.myapplication.presentation.screens.auth.SimpleLoginScreen
 import com.example.myapplication.presentation.screens.auth.SimpleRegisterScreen
-import com.example.myapplication.presentation.screens.main.MainScreen
+import com.example.myapplication.presentation.screens.main.SimpleMainScreen
 import com.example.myapplication.presentation.screens.splash.SplashScreen
 import com.example.myapplication.presentation.screens.test.TestConnectionScreen
 import com.example.myapplication.presentation.screens.stats.StatsScreen
@@ -60,7 +60,7 @@ fun EcoViveNavigation(navController: NavHostController) {
         }
         
         composable(Screen.Main.route) {
-            MainScreen()
+            SimpleMainScreen()
         }
         
         composable(Screen.TestConnection.route) {
