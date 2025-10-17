@@ -12,9 +12,9 @@ import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.navigation.compose.rememberNavController
-import com.example.myapplication.presentation.screens.home.HomeScreen
+import com.example.myapplication.presentation.screens.home.SimpleHomeScreen
 import com.example.myapplication.presentation.screens.map.MapScreen
-import com.example.myapplication.presentation.screens.profile.ProfileScreen
+import com.example.myapplication.presentation.screens.profile.SimpleProfileScreen
 import com.example.myapplication.presentation.screens.report.ReportScreen
 import com.example.myapplication.presentation.screens.rewards.RewardsScreen
 
@@ -85,8 +85,8 @@ fun MainScreen() {
             android.util.Log.d("MainScreen", "Renderizando pantalla seleccionada: $selectedTab")
             when (selectedTab) {
                 0 -> {
-                    android.util.Log.d("MainScreen", "Cargando HomeScreen...")
-                    HomeScreen(
+                    android.util.Log.d("MainScreen", "Cargando SimpleHomeScreen...")
+                    SimpleHomeScreen(
                         navController = navController,
                         onNavigateToTab = { tabIndex -> selectedTab = tabIndex }
                     )
@@ -104,8 +104,8 @@ fun MainScreen() {
                     RewardsScreen()
                 }
                 4 -> {
-                    android.util.Log.d("MainScreen", "Cargando ProfileScreen...")
-                    ProfileScreen()
+                    android.util.Log.d("MainScreen", "Cargando SimpleProfileScreen...")
+                    SimpleProfileScreen(navController = navController)
                 }
             }
             android.util.Log.d("MainScreen", "Pantalla renderizada exitosamente")

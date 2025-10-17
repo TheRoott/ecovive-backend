@@ -96,7 +96,7 @@ fun Splash(
             
             // Título de la app
             Text(
-                text = "EcoVive Perú",
+                text = "Recicla Contigo",
                 style = MaterialTheme.typography.displayMedium,
                 color = MaterialTheme.colorScheme.onPrimary,
                 fontWeight = FontWeight.Bold,
