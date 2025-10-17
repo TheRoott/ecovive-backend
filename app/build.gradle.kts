@@ -102,12 +102,12 @@ dependencies {
     implementation("androidx.camera:camera-lifecycle:1.3.1")
     implementation("androidx.camera:camera-view:1.3.1")
     
-    // Networking (comentado para evitar errores)
-    // implementation(libs.retrofit)
-    // implementation(libs.retrofit.gson)
-    // implementation(libs.okhttp)
-    // implementation(libs.okhttp.logging)
-    // implementation(libs.gson)
+    // Networking
+    implementation("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
+    implementation("com.squareup.okhttp3:okhttp:4.12.0")
+    implementation("com.squareup.okhttp3:logging-interceptor:4.12.0")
+    implementation("com.google.code.gson:gson:2.10.1")
     
     // Image Loading
     implementation("io.coil-kt:coil-compose:2.5.0")
