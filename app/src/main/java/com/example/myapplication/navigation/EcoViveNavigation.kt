@@ -4,7 +4,7 @@ import androidx.compose.runtime.Composable
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
-import com.example.myapplication.presentation.screens.auth.LoginScreen
+import com.example.myapplication.presentation.screens.auth.SimpleLoginScreen
 import com.example.myapplication.presentation.screens.auth.RegisterScreen
 import com.example.myapplication.presentation.screens.main.MainScreen
 import com.example.myapplication.presentation.screens.splash.SplashScreen
@@ -34,7 +34,7 @@ fun EcoViveNavigation(navController: NavHostController) {
         }
         
         composable(Screen.Login.route) {
-            LoginScreen(
+            SimpleLoginScreen(
                 onNavigateToRegister = {
                     navController.navigate(Screen.Register.route)
                 },
