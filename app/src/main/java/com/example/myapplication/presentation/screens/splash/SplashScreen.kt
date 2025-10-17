@@ -25,7 +25,8 @@ import kotlinx.coroutines.delay
 @Composable
 fun SplashScreen(
     onNavigateToAuth: () -> Unit,
-    onNavigateToMain: () -> Unit
+    onNavigateToMain: () -> Unit,
+    onNavigateToTest: () -> Unit
 ) {
     var startAnimation by remember { mutableStateOf(false) }
     val alphaAnim = remember { Animatable(0f) }
@@ -42,8 +43,8 @@ fun SplashScreen(
             animationSpec = tween(1000)
         )
         delay(2000)
-        // Por ahora navegar siempre al auth, después se puede verificar si el usuario ya está logueado
-        onNavigateToAuth()
+        // Navegar a la pantalla de prueba de conexión
+        onNavigateToTest()
     }
 
     Splash(alpha = alphaAnim.value, scale = scaleAnim.value)
