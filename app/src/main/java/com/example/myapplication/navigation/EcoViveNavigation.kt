@@ -9,6 +9,8 @@ import com.example.myapplication.presentation.screens.auth.RegisterScreen
 import com.example.myapplication.presentation.screens.main.MainScreen
 import com.example.myapplication.presentation.screens.splash.SplashScreen
 import com.example.myapplication.presentation.screens.test.TestConnectionScreen
+import com.example.myapplication.presentation.screens.stats.StatsScreen
+import com.example.myapplication.presentation.screens.about.AboutScreen
 
 @Composable
 fun EcoViveNavigation(navController: NavHostController) {
@@ -63,6 +65,14 @@ fun EcoViveNavigation(navController: NavHostController) {
         
         composable(Screen.TestConnection.route) {
             TestConnectionScreen()
+        }
+        
+        composable(Screen.Stats.route) {
+            StatsScreen()
+        }
+        
+        composable(Screen.About.route) {
+            AboutScreen()
         }
     }
 }

@@ -10,7 +10,7 @@ android {
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.ecovive.peru"
+        applicationId = "com.reciclacontigo.app"
         minSdk = 33  // Android 13 (API 33)
         targetSdk = 34  // Android 14 (API 34)
         versionCode = 1
